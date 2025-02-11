@@ -9,8 +9,12 @@ import NewProject from "./newProject";
 import { getDownloadURLFromPath } from "@/app/lib/firebase";
 import { ProjectCard } from "@/app/components/commons/ProjectCard";
 import { increaseProfileVisits } from "@/app/actions/increase-profile-visits";
+import { Metadata } from "next";
 
-
+export const metadata: Metadata = {
+    title: "ProjectInBio - Perfil",
+    description: "ProjectInBio - A plataforma de gestão de projetos.",
+};
 
 export default async function ProfilePage({
     params,
